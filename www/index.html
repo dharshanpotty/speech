@@ -9,7 +9,11 @@
 </head>
 <body>
     <div data-role="main" class="ui-content">
-        <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
+        Please type anything in below textbox and press "Play" button.
+        <input name="txtData" type="text">
+    </div>
+    <div data-role="main" class="ui-content">
+        <input onclick='responsiveVoice.speak($("input:text").val(), "UK English Male");' type='button' value='🔊 Play' />
     </div>
 </body>
 </html>
